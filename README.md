@@ -1,17 +1,18 @@
-# Hands-on supercomputing with parallel computing
+# Hands-on Supercomputing with Parallel Computing
 
-Neste repositório vão constar algumas das soluções para exercicios propostos pelo professor [Murilo Boratto](https://github.com/muriloboratto) na disciplina de Fundamentos de programação paralela. Cada notebook python tem objetivo de abordar uma determinada área de conhecimento e possui algumas perguntas e desafios. O link para o repositório com as atividades do professor está [Aqui](https://github.com/muriloboratto/hands-on-supercomputing-with-parallel-computing).
+In this repository, you will find solutions to exercises proposed by Professor [Murilo Boratto](https://github.com/muriloboratto) in the Parallel Programming Fundamentals course. Each Python notebook aims to cover a specific area of knowledge and contains various questions and challenges. The link to the professor's activity repository can be found [here](https://github.com/muriloboratto/hands-on-supercomputing-with-parallel-computing).
 
-## Objetivo
+## Objective
 
-O objetivo deste repositório é fornecer uma série de notebooks Python com exercícios e perguntas que visam melhorar a compreensão e o domínio de diversos conceitos de programação e ciência de dados.
+The goal of this repository is to provide a series of Python notebooks with exercises and questions that enhance the understanding and mastery of various programming and data science concepts.
 
 ## Notebooks
 
-Aqui está a lista de notebooks disponíveis neste repositório, cada um com seu próprio objetivo de aprendizagem e desafios respondidos:
+Here is the list of notebooks available in this repository, each with its own learning objectives and answered challenges:
 
-1. [Hands-On-1-Portable-Parallel-Programming-with-OpenMP](./my-hands-on-solutions/Hands-On-1-Portable-Parallel-Programming-with-OpenMP/Hands-On-1-Portable-Parallel-Programming-with-OpenMP.ipynb) - Este notebook tem como objetivo introduzir o OpenMP e trazer conceitos simples sobre computação paralela.
+1. [Hands-On-1-Portable-Parallel-Programming-with-OpenMP](./my-hands-on-solutions/Hands-On-1-Portable-Parallel-Programming-with-OpenMP/Hands-On-1-Portable-Parallel-Programming-with-OpenMP.ipynb) - This notebook aims to introduce OpenMP and cover fundamental concepts of parallel computing.
+2. 1. [Hands-On-2-Parallelization-with-OpenMP](./my-hands-on-solutions/Hands-On-2-Parallelization-with-OpenMP/Hands-On-2-Parallelization-with-OpenMP.ipynb) - Esse notebook tem o objetivo de fortaceler conhecimentos sobre OpenMP
 
-## Como Usar
+## How to Use
 
-- Você pode clonar este repositório em sua máquina local usando o seguinte comando:
+- You can clone this repository to your local machine using the following command:
