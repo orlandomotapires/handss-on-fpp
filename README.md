@@ -16,3 +16,5 @@ Here is the list of notebooks available in this repository, each with its own le
 ## How to Use
 
 - You can clone this repository to your local machine using the following command:
+  - `git clone: https://github.com/orlandomotapires/handss-on-fpp.git`
+- After just go to the notebooks files and run the cells
