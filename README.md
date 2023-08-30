@@ -11,7 +11,7 @@ The goal of this repository is to provide a series of Python notebooks with exer
 Here is the list of notebooks available in this repository, each with its own learning objectives and answered challenges:
 
 1. [Hands-On-1-Portable-Parallel-Programming-with-OpenMP](./my-hands-on-solutions/Hands-On-1-Portable-Parallel-Programming-with-OpenMP/Hands-On-1-Portable-Parallel-Programming-with-OpenMP.ipynb) - This notebook aims to introduce OpenMP and cover fundamental concepts of parallel computing.
-2. 1. [Hands-On-2-Parallelization-with-OpenMP](./my-hands-on-solutions/Hands-On-2-Parallelization-with-OpenMP/Hands-On-2-Parallelization-with-OpenMP.ipynb) - Esse notebook tem o objetivo de fortaceler conhecimentos sobre OpenMP
+2. [Hands-On-2-Parallelization-with-OpenMP](./my-hands-on-solutions/Hands-On-2-Parallelization-with-OpenMP/Hands-On-2-Parallelization-with-OpenMP.ipynb) - Esse notebook tem o objetivo de fortaceler conhecimentos sobre OpenMP
 
 ## How to Use
 
