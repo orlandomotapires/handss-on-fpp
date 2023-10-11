@@ -1,14 +1,3 @@
-/*
-File:           mm-openmp.c
-Version:        Solution
-Purpose:        Matrix Multiply Sequential Algorithm in C using OpenMP
-Author:         Murilo Boratto  <muriloboratto 'at' fieb.org.br>
-Usage:
-Hotocompile:   gcc mm-openmp.c -o mm -fopenmp
-Hotoexecute:   OMP_NUM_THREADS=<threads> ./mm <size>
-               OMP_NUM_THREADS=4         ./mm  100  
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <omp.h>
@@ -61,11 +50,6 @@ int main (int argc, char **argv)
 // printMatrix(B,size);
 // printMatrix(C,size);
 
- free(A);
- free(B);
- free(C);
- 
  return 0;
 
 }
-

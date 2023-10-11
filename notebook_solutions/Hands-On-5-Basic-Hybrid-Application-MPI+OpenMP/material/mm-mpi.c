@@ -1,20 +1,3 @@
-/*
-File:           mm-mpi.c
-Purpose:        Parallelize matrix multiplication using MPI
-Authors:        Francisco Almeida, Domingo Giménez, José Miguel Mantas, Antonio M. Vidal
-                'Introducción a la programación paralela,
-                 Paraninfo Cengage Learning, 2008, Capítulo 6, 
-                 Sección 6.3 Particionado de datos: Código 6.10
-                 Multiplicación de matrices por particionado de datos'
-Usage:
-HowToCompile:   mpicc mm-mpi.c -o mm-mpi
-HowToExecute:   mpirun -np <numberOfProcesses> ./mm-mpi <size>
-Example:        mpirun -np     4               ./mm-mpi  100
-
-Comments:
-                ◆ Spanish contents;          
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/time.h>
@@ -114,11 +97,9 @@ int main(int argc, char *argv[]) {
   MPI_Comm_rank(MPI_COMM_WORLD, &nodo);
   MPI_Get_processor_name(nombre_procesador, &long_name);
 
-
   if (nodo == 0) {
     N = atoi(argv[1]);
   }
-
   MPI_Bcast(&N, 1, MPI_INT, 0, MPI_COMM_WORLD);
   
   fa = ca = lda = fb = cb = ldb = fc = cc = ldc = N;
@@ -151,7 +132,7 @@ int main(int argc, char *argv[]) {
   MPI_Barrier(MPI_COMM_WORLD);
   tf = MPI_Wtime();
   if (nodo == 0) {
-    printf("(%d) Process %d, %s, Time %.6lf\n", N, np, nombre_procesador, tf - ti);
+    //printf("(%d) Process %d, %s, Time %.6lf\n", N, np, nombre_procesador, tf - ti);
     printf("%d\t%f\n", N, tf - ti);  
   }
   
