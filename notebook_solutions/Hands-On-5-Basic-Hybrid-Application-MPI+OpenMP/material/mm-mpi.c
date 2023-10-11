@@ -3,6 +3,19 @@
 #include <sys/time.h>
 #include <mpi.h>
 
+void writeResultsToFile(int size, double time_spend, int num_processors) {
+    FILE *output_file = fopen("./output/mm_mpi.txt", "a");
+    if (output_file == NULL) {
+        perror("Erro ao abrir o arquivo de saída");
+        return;
+    } 
+
+    fprintf(output_file, "%d %lf %d ", size, time_spend, num_processors);
+    if(size == 1000) fprintf(output_file, "\n");
+
+    fclose(output_file);
+}
+
 void mms(double *a, int fa, int ca, int lda, double *b, int fb, int cb, int ldb, double *c, int fc, int cc, int ldc) {
     int i, j, k;
     double s;
@@ -132,13 +145,15 @@ int main(int argc, char *argv[]) {
   MPI_Barrier(MPI_COMM_WORLD);
   tf = MPI_Wtime();
   if (nodo == 0) {
-    //printf("(%d) Process %d, %s, Time %.6lf\n", N, np, nombre_procesador, tf - ti);
-    printf("%d\t%f\n", N, tf - ti);  
+    printf("(%d) Process %d, %s, Time %.6lf\n", N, np, nombre_procesador, tf - ti);
+    //printf("%d\t%f\t%d\n", N, tf - ti, np);
+    writeResultsToFile(N, tf - ti, np); 
   }
   
   free(a);
   free(b);
   free(c);
+  
   if (nodo == 0)
     free(c0);
   MPI_Finalize();

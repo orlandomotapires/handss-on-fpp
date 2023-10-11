@@ -5,7 +5,7 @@ do
   #echo "Number of threads:" $i "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-="  
   for ((j=200; j<=1000; j+=200))
   do
-    OMP_NUM_THREADS="$i" ./material/mm "$j"
+    mpirun -np "$i" ./material/mm-mpi "$j"
   done
   echo 
 done

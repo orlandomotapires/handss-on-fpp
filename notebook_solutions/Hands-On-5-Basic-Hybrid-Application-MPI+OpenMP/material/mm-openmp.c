@@ -63,7 +63,7 @@ int main (int argc, char **argv)
  
  t2 = omp_get_wtime();
 
- printf("%d\t%f\n",size, t2-t1);
+//printf("%d\t%f\n",size, t2-t1);
 
 // printMatrix(A,size);
 // printMatrix(B,size);
