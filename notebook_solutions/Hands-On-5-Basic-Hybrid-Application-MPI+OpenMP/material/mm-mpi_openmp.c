@@ -181,7 +181,7 @@ int main(int argc,char *argv[])
   tf=MPI_Wtime();
   if(nodo==0)
   {
-   printf("(%d) Threads %d, Process %d, %s, Time %.6lf\n\n",N, NUMTHREADS, np, nombre_procesador,tf-ti);
+   //printf("(%d) Threads %d, Process %d, %s, Time %.6lf\n\n",N, NUMTHREADS, np, nombre_procesador,tf-ti);
     writeResultsToFile(N, tf-ti, np, NUMTHREADS);
 
     //printf("%d\t%f\n", N, tf-ti);
